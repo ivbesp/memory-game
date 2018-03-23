@@ -1,32 +1,22 @@
 const InitialState = {
-
-    categories:
-        [
-            {
-                id              : 1,
-                name            :'Продукты питания',
-                anchor_link     :'products',
-                temp            : true
-            },
-            {
-                id              : 2,
-                name            :'Инструменты',
-                anchor_link     :'tools',
-                temp            : false
-            },
-            {
-                id              : 3,
-                name            :'Автомобили',
-                anchor_link     :'automobiles',
-                temp            : true
-            },
-            {
-                id              : 4,
-                name            :'Расходные материалы',
-                anchor_link     :'consumables',
-                temp            : false
-            }
-
-        ]
+    cards: [],
+    score: 0,
+    route: 'start-page'
 };
+
+/*
+* cards:[
+*   {
+*       id: 1,           -> идентификатор
+*       type: OC,        -> тип карты, совпадает с названием изображения карты
+*       isOpened: true,  -> открыта
+*       idGuessed: true  -> угадана
+*   },
+*   ...
+* ]
+*
+* route принимает три значения: «start-page», «game-page», «end-page»
+*
+*
+* */
 export default InitialState;
