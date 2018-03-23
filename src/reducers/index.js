@@ -1,8 +1,12 @@
 import { combineReducers } from 'redux';
-import categories from './categories';
+import PageReducer from './page'
+import CardsReducer from './cards';
+import ScoreReducer from './score';
 
 const rootReducer = combineReducers({
-    categories
+    PageReducer,
+    CardsReducer,
+    ScoreReducer
 });
 
 export default rootReducer;
