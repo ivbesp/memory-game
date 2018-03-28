@@ -13,7 +13,9 @@ class StartPage extends Component {
 
         return (
             <div className='start-page'>
-                Start-page
+                <img className='start-page__img' src="/img/StartGame.png" alt=""/>
+                <div className='start-page__title'>MEMORY GAME</div>
+                <a className='start-page__button' href="#">Начать игру</a>
             </div>
         );
     }

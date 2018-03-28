@@ -1,0 +1,48 @@
+.start-page {
+  max-width  : 503px;
+  width      : 100%;
+  min-height : 360px;
+  margin     : 0 auto;
+  padding    : 94px 0 0 0;
+  text-align : center;
+}
+
+.start-page__img {
+  width  : 100%;
+  height : auto;
+}
+
+.start-page__title {
+  font-family    : "Helvetica Neue", "Arial";
+  font-weight    : bold;
+  font-size      : 28px;
+  color          : #ffffff;
+  opacity        : 0.85;
+  letter-spacing : 0.2px;
+  margin         : 20px 0 0 0;
+}
+
+.start-page__button {
+  text-decoration : none;
+  display         : inline-block;
+  width           : 144px;
+  height          : 42px;
+  padding         : 9px 0px;
+  background      : #ffffff;
+  opacity         : 0.75;
+  border-radius   : 4px;
+  color           : #1C7430;
+  letter-spacing  : 0;
+  font-family     : "Helvetica Neue", "Arial";
+  font-weight     : bold;
+  margin          : 34px 0 0 0;
+  transition      : 0.2s;
+
+}
+
+.start-page__button:hover {
+  text-decoration : none;
+  opacity         : 1;
+  color           : #1C7430;
+  transition      : 0.2s;
+}
