@@ -1,6 +1,6 @@
 import InitialState from './../initialstate';
 
-export const CardsReducer = (state = InitialState.cards, action) => {
+export const cards = (state = InitialState.cards, action) => {
     switch(action.type) {
         case 'SET_CARDS':
             return Object.assign({}, state, action.cards);
@@ -37,4 +37,4 @@ export const CardsReducer = (state = InitialState.cards, action) => {
     }
 };
 
-export default CardsReducer;
+export default cards;
