@@ -1,0 +1,22 @@
+.wrapper {
+  width  : 100%;
+  margin : 0 auto;
+  height : 100%;
+  border : 1px solid gray;
+}
+
+.test_links {
+  list-style   : none;
+  margin       : 0;
+  padding-left : 0;
+
+}
+
+.test_links li {
+  display      : inline-block;
+  margin-right : 10px;
+}
+
+.test_links li a{
+  color: white;
+}

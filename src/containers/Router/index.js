@@ -9,7 +9,7 @@ import GamePage from './../GamePage';
 import EndPage from './../EndPage';
 
 const mapStateToProps = (state) => ({
-    RouterState: state.page
+    state: state
 
 });
 
@@ -26,30 +26,36 @@ const mapDispatchToProps = (dispatch) => ({
 class Router extends React.Component {
     constructor(props) {
         super(props);
+        this._renderStartPage=this._renderStartPage.bind(this);
+        this._renderGamePage=this._renderGamePage.bind(this);
+        this._renderEndPage=this._renderEndPage.bind(this);
     }
 
-    _renderStartPage() {
+    _renderStartPage(e) {
+        e.preventDefault();
         this.props.renderStartPage();
     }
 
-    _renderGamePage() {
+    _renderGamePage(e) {
+        e.preventDefault();
         this.props.renderGamePage();
     }
 
-    _renderEndPage() {
+    _renderEndPage(e) {
+        e.preventDefault();
         this.props.renderEndPage();
     }
 
     render() {
         let pageTemplate;
-        console.log(this.props.RouterState);
-        switch(this.props.RouterState) {
+        console.log(this.props.state.page.current);
+        switch(this.props.state.page.current) {
 
-            case 'game-page':
+            case 'GamePage':
                 pageTemplate = <GamePage/>;
                 break;
 
-            case 'end-page':
+            case 'EndPage':
                 pageTemplate = <EndPage/>;
                 break;
 
@@ -60,6 +66,11 @@ class Router extends React.Component {
         return (
 
             <div className="wrapper">
+                <ul className="test_links">
+                    <li><a href="#" onClick={this._renderStartPage}>Стартовая страница</a></li>
+                    <li><a href="#" onClick={this._renderGamePage}>Игровая страница</a></li>
+                    <li><a href="#" onClick={this._renderEndPage}>Конечная страница</a></li>
+                </ul>
                 {pageTemplate}
             </div>
 
