@@ -1,12 +1,12 @@
 import { combineReducers } from 'redux';
-import PageReducer from './page'
-import CardsReducer from './cards';
-import ScoreReducer from './score';
+import page from './page'
+import cards from './cards';
+import score from './score';
 
 const rootReducer = combineReducers({
-    PageReducer,
-    CardsReducer,
-    ScoreReducer
+    page,
+    cards,
+    score
 });
 
 export default rootReducer;
