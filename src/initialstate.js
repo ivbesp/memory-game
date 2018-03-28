@@ -1,7 +1,9 @@
 const InitialState = {
     cards: [],
     score: 0,
-    page: 'start-page'
+    page: {
+        current: 'StartPage'
+    }
 };
 
 /*
