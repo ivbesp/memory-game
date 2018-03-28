@@ -1,6 +1,6 @@
 import InitialState from './../initialstate';
 
-export const ScoreReducer = (state = InitialState.score, action) => {
+export const score = (state = InitialState.score, action) => {
     switch(action.type) {
         case 'RESET_SCORE':
             return Object.assign({}, state, 0);
@@ -16,4 +16,4 @@ export const ScoreReducer = (state = InitialState.score, action) => {
     }
 };
 
-export default ScoreReducer;
+export default score;
