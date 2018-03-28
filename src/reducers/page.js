@@ -1,6 +1,6 @@
 import InitialState from './../initialstate';
 
-export const PageReducer = (state = InitialState.page, action) => {
+export const page = (state = InitialState.page, action) => {
     switch(action.type) {
         case 'RENDER_STARTPAGE':
             return Object.assign({},state,'StartPage');
@@ -16,4 +16,4 @@ export const PageReducer = (state = InitialState.page, action) => {
     }
 };
 
-export default PageReducer;
+export default page;
